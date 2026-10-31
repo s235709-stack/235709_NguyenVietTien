@@ -72,15 +72,4 @@ Docker Hub: https://hub.docker.com/r/nguyenviettien235709/frontend
 ## Triển khai trên Render
 Cả hai dịch vụ được triển khai từ Docker image trên Docker Hub.
 
-| Dịch vụ | Image | URL |
-|---|---|---|
-| Frontend (`web-235709`) | `nguyenviettien235709/frontend:latest` | https://web-235709.onrender.com |
-| Backend API (`api-235709`) | `nguyenviettien235709/backend:latest` | https://api-235709.onrender.com |
-
-Kiểm tra backend: https://api-235709.onrender.com/health và https://api-235709.onrender.com/api/devices
-
-Biến môi trường:
-- Backend: `MONGODB_URI` (chuỗi kết nối MongoDB Atlas), `CORS_ORIGIN` (URL frontend)
-- Frontend: `API_URL` (URL backend), `PORT=80`
-
-Lưu ý: gói Free của Render tự "ngủ" khi không có truy cập, lần mở đầu tiên có thể chậm khoảng 50 giây.
+| Dịch vụ |
