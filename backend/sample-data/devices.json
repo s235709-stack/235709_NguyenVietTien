@@ -1,0 +1,38 @@
+[
+  {
+    "deviceId": "TB001",
+    "name": "Máy chiếu Epson EB-X06",
+    "deviceType": "Máy chiếu",
+    "room": "A101",
+    "brand": "Epson",
+    "model": "EB-X06",
+    "quantity": 1,
+    "status": "Đang sử dụng",
+    "purchaseDate": "2024-08-15",
+    "description": "Máy chiếu treo trần phòng A101"
+  },
+  {
+    "deviceId": "TB002",
+    "name": "Máy tính để bàn Dell OptiPlex 3080",
+    "deviceType": "Máy tính",
+    "room": "B203",
+    "brand": "Dell",
+    "model": "OptiPlex 3080",
+    "quantity": 30,
+    "status": "Đang sửa chữa",
+    "purchaseDate": "2023-09-01",
+    "description": "Phòng máy B203, 2 máy đang sửa nguồn"
+  },
+  {
+    "deviceId": "TB003",
+    "name": "Loa kéo di động JBL PartyBox",
+    "deviceType": "Thiết bị âm thanh",
+    "room": "Hội trường",
+    "brand": "JBL",
+    "model": "PartyBox 310",
+    "quantity": 2,
+    "status": "Hư hỏng",
+    "purchaseDate": "2022-05-20",
+    "description": "Loa bị rè, cần kiểm tra"
+  }
+]
