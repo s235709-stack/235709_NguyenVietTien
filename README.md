@@ -53,3 +53,18 @@ docker run -p 5000:5000 --env-file .env nguyenviettien235709/backend
 File `.env` không được đóng vào image, các biến môi trường được truyền khi chạy container bằng `--env-file`.
 
 Docker Hub: https://hub.docker.com/r/nguyenviettien235709/backend
+
+## Chạy frontend bằng Docker
+```bash
+cd frontend
+docker build -t nguyenviettien235709/frontend .
+docker run -p 3000:80 -e API_URL=http://localhost:5000 nguyenviettien235709/frontend
+```
+Hoặc dùng image có sẵn từ Docker Hub:
+```bash
+docker pull nguyenviettien235709/frontend
+docker run -p 3000:80 -e API_URL=http://localhost:5000 nguyenviettien235709/frontend
+```
+Truy cập http://localhost:3000. Biến môi trường `API_URL` là địa chỉ backend, được áp dụng khi container khởi động nên không cần build lại image khi đổi địa chỉ.
+
+Docker Hub: https://hub.docker.com/r/nguyenviettien235709/frontend
