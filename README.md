@@ -68,3 +68,10 @@ docker run -p 3000:80 -e API_URL=http://localhost:5000 nguyenviettien235709/fron
 Truy cập http://localhost:3000. Biến môi trường `API_URL` là địa chỉ backend, được áp dụng khi container khởi động nên không cần build lại image khi đổi địa chỉ.
 
 Docker Hub: https://hub.docker.com/r/nguyenviettien235709/frontend
+
+## Triển khai trên Render
+Frontend được triển khai từ Docker image `nguyenviettien235709/frontend:latest`, biến môi trường `API_URL` trỏ tới backend.
+
+- Frontend: https://web-235709.onrender.com
+
+Lưu ý: gói Free của Render tự "ngủ" khi không có truy cập, lần mở đầu tiên có thể chậm khoảng 50 giây.
